@@ -1,4 +1,5 @@
 import React from "react";
+import ProductRow from "./ProductRow";
 
 const ProductTable =  ({ products }) => {
     return (
