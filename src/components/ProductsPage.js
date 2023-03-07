@@ -9,12 +9,21 @@ function ProductsPage() {
 
 
 
+    
+  const updateProducts = (newProducts) => {
+    setProducts(newProducts);
+  };
+
+
     return (
         <div>
             <h1>IronStore</h1>
             <SearchBar 
-                
+
+
+                onUpdateProducts={updateProducts}
             />
+            <ProductTable products={filteredProducts} />
         </div>
     )
 }
