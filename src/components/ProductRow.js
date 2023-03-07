@@ -7,10 +7,10 @@ const ProductRow = ({ product }) => {
 
     return (
         <tr>
-            
+            <td>{name}</td>
+            <td className="price">{product.name}</td>
         </tr>
-    )
-}
-
+    );
+};
 
 export default ProductRow;
