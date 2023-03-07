@@ -9,6 +9,15 @@ function SearchBar ({ searchText, inStockOnly, onSearchInputChange, onInStockInp
                 value={searchText}
                 onChange={onSearchInputChange}
             />
+            <br />
+            <label>
+                <input 
+                    type="checkbox"
+                    checked={inStockOnly}
+                    onChange={onInStockInputChange}
+                />
+                    Only Show products in stock
+            </label>
         </div>
     )
 }
