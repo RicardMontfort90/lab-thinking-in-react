@@ -1,27 +1,24 @@
 import { useState } from "react";
 import SearchBar from "./SearchBar";
-import ProductTable from "./ProductTable";
-import jsonData from "/data.json";
+
 
 
 function ProductsPage() {
-    const [products, setProducts] = useState(jsonData);
+    
+    const [searchText, ] = useState("");
 
 
 
     
-  const updateProducts = (newProducts) => {
-    setProducts(newProducts);
-  };
 
 
     return (
         <div>
             <h1>IronStore</h1>
             <SearchBar 
+                searchText={searchText}
 
-
-                onUpdateProducts={updateProducts}
+                
             />
             
         </div>
