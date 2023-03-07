@@ -18,14 +18,26 @@ function ProductsPage() {
         setInStockOnly(e.target.checked);
     };
 
+    const upDateProducts = (newProducts) => {
+        setProducts(newProducts);
+    };
+
+    const filteredProducts = products.filter((product) => {
+        return (
+            product.name.toLowerCase().includes(searchText.toLowerCase()) &&
+                (!inStockOnly || product.inStock )
+        );
+    });
 
     return (
         <div>
             <h1>IronStore</h1>
             <SearchBar 
                 searchText={searchText}
+                inStockOnly={inStockOnly}
                 onSearchInputChange={handleSearchInputChange}
                 onInStockInputChange={handleInStockInputChange}
+                onUpdateProducts={upDateProducts}
             />
             
         </div>
