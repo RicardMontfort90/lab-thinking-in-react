@@ -23,7 +23,7 @@ function ProductsPage() {
 
                 onUpdateProducts={updateProducts}
             />
-            <ProductTable products={filteredProducts} />
+            
         </div>
     )
 }
