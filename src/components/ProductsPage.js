@@ -39,9 +39,9 @@ function ProductsPage() {
                 onInStockInputChange={handleInStockInputChange}
                 onUpdateProducts={upDateProducts}
             />
-            
+            <ProductTable products={filteredProducts} />
         </div>
-    )
-}
+    );
+};
 
 export default ProductsPage;
