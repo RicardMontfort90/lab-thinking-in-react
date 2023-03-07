@@ -25,7 +25,7 @@ function ProductsPage() {
             <SearchBar 
                 searchText={searchText}
                 onSearchInputChange={handleSearchInputChange}
-
+                onInStockInputChange={handleInStockInputChange}
             />
             
         </div>
