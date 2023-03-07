@@ -19,7 +19,7 @@ function SearchBar ({ searchText, inStockOnly, onSearchInputChange, onInStockInp
                     Only Show products in stock
             </label>
         </div>
-    )
-}
+    );
+};
 
 export default SearchBar;

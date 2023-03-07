@@ -19,4 +19,5 @@ const ProductTable =  ({ products }) => {
     );
 };
 
+
 export default ProductTable;

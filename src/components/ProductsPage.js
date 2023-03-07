@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SearchBar from "./SearchBar";
 import ProductTable from "./ProductTable";
-import jsonData from "../data.json"
+import jsonData from "../data.json";
 
 
 function ProductsPage() {
